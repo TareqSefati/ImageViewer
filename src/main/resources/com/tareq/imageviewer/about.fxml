@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="500.0" spacing="30.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/tsp-rounded-logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </HBox>
+      <Pane prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #fff; -fx-border-color: #999999;">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+         <children>
+            <VBox prefHeight="350.0" prefWidth="480.0">
+               <children>
+                  <TextArea editable="false" focusTraversable="false" prefHeight="218.0" prefWidth="480.0" text="This is a simple desktop application developed by JavaFX to view images&#10;with RGB image filtering functionality.&#10;&#10;## Features&#10;1. Open an image and show it in image view.&#10;2. Convert to gray image and original image by toggle button.&#10;3. Show the image details.&#10;4. Show the next &amp; previous images with next and previous button activity.&#10;5. Shows the file name and other details information in log section.&#10;6. RGB channel image filtering functionality of an image and show each channel&#10; in tab view.&#10;7. Customized designed menu bar." />
+                  <Label prefHeight="24.0" prefWidth="259.0" text="Developed by - Md. Tareq Sefati" textFill="#1d186f">
+                     <font>
+                        <Font name="STLiti" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="480.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/mail-fill.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" text="tareq.sefati@gmail.com" textFill="#1d186f">
+                           <font>
+                              <Font name="STLiti" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="177.0" prefHeight="41.0" prefWidth="480.0" spacing="10.0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/whatsapp-fill.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" text="+8801745578700" textFill="#1d186f">
+                           <font>
+                              <Font name="STLiti" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</VBox>

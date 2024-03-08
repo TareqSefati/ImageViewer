@@ -1,0 +1,74 @@
+/*
+Resources for more interest:
+1. https://stackoverflow.com/questions/21912946/how-can-i-style-a-javafx-menu-and-its-items-in-css
+2. https://stackoverflow.com/questions/12299162/how-to-style-menu-button-and-menu-items
+*/
+
+/*
+.menu .label{
+    -fx-text-fill: green;
+}
+.menu:focused {
+    -fx-background-color: #8E5572;
+    -fx-background-radius:  10 0 10 0;
+}
+
+.menu-bar {
+    -fx-background-color: #222;
+    -fx-background-radius:  19 19 0 0;
+}
+.menu
+{
+     -fx-text-fill: blue;
+}
+.menu .menuItem {
+    -fx-background-color: #222;
+}*/
+/*
+Menu bar manipulation code
+*/
+.menu-bar {
+    -fx-background-color: #222;
+    -fx-background-radius:  19 19 0 0;
+}
+.menu-bar .label{
+    -fx-text-fill: white;
+}
+/*.menu-bar .label {
+    -fx-font-size: 14.0 pt;
+    -fx-font-family: "Bookman Old Style";
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10.0px;
+
+}*/
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing, .menu-item:focused {
+    -fx-background-color: #8E5572;
+    -fx-background-radius:  10 0 10 0;
+}
+/*.menu:hover {
+    -fx-background-color: #8E5572;
+    -fx-background-radius:  10 0 10 0;
+}*/
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+/*.menu-item:focused {
+     -fx-background-color: #8E5572;
+     -fx-background-radius:  10 0 10 0;
+}*/
+
+.menu-item:focused .label {
+    -fx-text-fill: blue;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #222;
+    -fx-background-radius: 0 6 6 6;
+    -fx-background-insets: 0, 1, 2;
+    /*-fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;*/
+/*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}
